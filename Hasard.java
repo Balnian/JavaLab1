@@ -45,8 +45,11 @@ public class Hasard
             System.out.print("     " + (i+2) + " : ");
          else
             System.out.print("    " + (i+2) + " : ");
-         for(int y=0; y<resultat[i]*(67-Integer.toString(Max).length()+1)/Max;y++)
-            System.out.print("#");
+         if(nbLancer != 0 && Max != 0)
+         {
+            for(int y=0; y<resultat[i]*(67-Integer.toString(Max).length()+1)/Max;y++)
+               System.out.print("#");
+         }
          System.out.println(" "+resultat[i]); 
       }
    }
